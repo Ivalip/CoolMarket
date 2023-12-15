@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="CoolMarket"
+            android:id="@+id/TV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </TextView>
+        <CheckBox android:id="@+id/CB1"
+            android:text="Лимонад"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </CheckBox>
+        <CheckBox android:id="@+id/CB2"
+            android:text="Бутылка воды"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </CheckBox>
+        <CheckBox android:id="@+id/CB3"
+            android:text="Сухарики"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </CheckBox>
+        <CheckBox android:id="@+id/CB4"
+            android:text="Попкорн"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </CheckBox>
+        <CheckBox android:id="@+id/CB5"
+            android:text="Орешки"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </CheckBox>
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/RG"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <RadioButton
+                android:text="Самовывоз"
+                android:id="@+id/RB1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+            </RadioButton>
+            <RadioButton
+                android:text="Курьером"
+                android:id="@+id/RB2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+            </RadioButton>
+        </RadioGroup>
+        <TextView
+            android:textSize="20sp"
+            android:text="Комментарий для доставки: "
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+        </TextView>
+        <EditText
+            android:id="@+id/ET"
+            android:layout_width="410dp"
+            android:layout_height="100dp">
+        </EditText>
+        <Button
+            android:id="@+id/B"
+            android:text="Сделать заказ"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:onClick="showDialog">
+        </Button>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
